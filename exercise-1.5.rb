@@ -1,7 +1,7 @@
-Exercise 1.5: Printing user data
-Create a Ruby file called exercise-1.5.rb.
+# Exercise 1.5: Printing user data
+# Create a Ruby file called exercise-1.5.rb.
 
-Given the array of hashes:
+# Given the array of hashes:
 
 users = [
     {
@@ -17,10 +17,15 @@ users = [
         age: 23
     }
 ]
-Use a while loop to print the values of each hash such as "My name is ... and I am ...". If the first name starts with "Jimmy", print out "My name and age is confidential."
+# Use a while loop to print the values of each hash such as "My name is ... and I am ...". If the first name starts with "Jimmy", print out "My name and age is confidential."
 
-expected output:
+# Code Coach
 
-> My name is John Doe and I am 43.
-> My name is Amy Singer and I am 54.
-> My name and age is confidential.
+# users.each do |user|
+#   puts "#{user["name"]}"
+# end
+# expected output:
+
+# > My name is John Doe and I am 43.
+# > My name is Amy Singer and I am 54.
+# > My name and age is confidential.
