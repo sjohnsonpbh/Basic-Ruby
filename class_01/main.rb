@@ -63,6 +63,9 @@ a.concat(b) #  [1, 2, 3, 4, 5, 6]
 
 # Hashes
 
+# remember that these two Hashes are exactly the same:
+# { :one => "eins", :two => "zwei", :three => "drei" }
+# { one: "eins", two: "zwei", three: "drei" }
 # Creating Hashes
 my_hash = {
   "This is a key" => "this is the value",
