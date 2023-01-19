@@ -21,12 +21,11 @@ class Person
     end
 
     def print_all_people
-        puts "We have these people so far: "  @@people.each "#{name, age}"
-
+        puts  @@people.each { |name| "Name:#{name[name]}" }
     end
 end
 
 person = Person.new("Jim", 35)
 person = Person.new("Michael", 45)
 
-puts "#{person.print_all_people}"
+puts person.print_all_people
