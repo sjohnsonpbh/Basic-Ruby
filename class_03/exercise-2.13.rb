@@ -15,7 +15,7 @@ class Person
         @name = p_name
         @age = p_age
 
-        @@people << self # pushing to array << is shovel operator / push all instance variables
+        @@people << self # Ruby Remember me - pushing to array << is shovel operator / push all instance variables
         # @@people << self
     end
 
