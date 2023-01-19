@@ -8,24 +8,26 @@
 # Create a class method called print_all_people. Loop through people and print each name and age in the format of "Name: John Doe, Age: 54". Call this method to see if the results are correct.
 
 class Person
-    attr_accessor :name
-    attr_accessor :age
+    attr_accessor :name, :age
     @@people = []  # Ruby Remember me - class variable has two @@ 
 
     def initialize(p_name, p_age) # Ruby Remember me - 
         @name = p_name
         @age = p_age
 
-        @@people.push(p_name, p_age)
+        @@people << self # pushing to array << is shovel operator / push all instance variables
         # @@people << self
     end
 
+
     def print_all_people
-        puts  @@people.each { |name| "Name:#{name[name]}" }
+        @@people.each do | someone |
+            puts "Name: #{someone.name} Age: #{someone.age}"
+        end
     end
 end
 
 person = Person.new("Jim", 35)
 person = Person.new("Michael", 45)
 
-puts person.print_all_people
+person.print_all_people
