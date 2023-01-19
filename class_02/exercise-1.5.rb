@@ -21,9 +21,9 @@ users = [
 
 # Code Coach
 
-# users.each do |user|
-#   puts "#{user["name"]}"
-# end
+users.each do |user|
+  puts "My name is #{user[:name]} and I am #{user[:age]}"
+end
 # expected output:
 
 # > My name is John Doe and I am 43.
