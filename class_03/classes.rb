@@ -6,4 +6,5 @@
 
 
 
-  
+#  @@ denotes a class variable, each instance of a class will have these variables
+
